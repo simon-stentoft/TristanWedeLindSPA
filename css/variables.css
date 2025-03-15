@@ -1,0 +1,12 @@
+:root {
+  --maxWidth: 1024px;
+
+  --textColorPrimary: black;
+  --backgroundColorPrimary: white;
+
+  --textColorSecondary: white;
+  --backgroundColorSecondary: rgb(70, 128, 148);
+
+  --textColorHeader: beige;
+  --backgroundColorHeader: purple;
+}
