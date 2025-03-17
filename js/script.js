@@ -3,7 +3,7 @@ const topBtn = document.getElementById("topBtn");
 
 // Add event listener to scroll
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 600) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";

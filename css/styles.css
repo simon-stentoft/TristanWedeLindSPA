@@ -7,7 +7,6 @@
 }
 
 #topBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -17,11 +16,7 @@
   cursor: pointer;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--accentColorSecondary);
-  color: var(--textColorSecondary);
-  > :hover {
-    background-color: var(--accentColorPrimary);
-  }
+  background-color: var(--backgroundColorPrimary);
 }
 
 .hidden {
@@ -31,6 +26,11 @@
 body {
   background-color: var(--backgroundColorPrimary);
   color: var(--textColorPrimary);
+  line-height: 1.5;
+
+  main {
+    padding: 1rem;
+  }
 
   header {
     padding: 0 1rem;
@@ -75,13 +75,56 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 1rem;
     text-align: center;
     background-color: var(--backgroundColorHeader);
     color: var(--textColorSecondary);
     a {
       color: var(--accentColorPrimary);
       text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+    }
+    #social-media {
+      margin: 1rem;
+      img {
+        border-radius: 50%;
+      }
+    }
+    #kea-publishing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > p {
+        margin-left: 0.5rem;
+      }
+    }
+    #policy {
+      margin-bottom: 1rem;
+    }
+    #credits {
+      margin-bottom: 1rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0.5rem;
+    font-style: italic;
+    padding-left: 1rem;
+    border-radius: 0.8rem;
+    color: var(--textColorSecondary);
+    background-color: var(--backgroundColorSecondary);
+    p:last-of-type {
+      margin-top: 1rem;
+      text-align: right;
+      font-style: normal;
     }
   }
 }
