@@ -1,12 +1,15 @@
 :root {
   --maxWidth: 1024px;
 
-  --textColorPrimary: black;
-  --backgroundColorPrimary: white;
+  --textColorPrimary: #283618; /* Deep green for most text */
+  --backgroundColorPrimary: #fefae0; /* Light cream for main backgrounds */
 
-  --textColorSecondary: white;
-  --backgroundColorSecondary: rgb(70, 128, 148);
+  --textColorSecondary: #fefae0; /* Light cream for text on dark backgrounds */
+  --backgroundColorSecondary: #606c38; /* Dark olive for secondary backgrounds */
 
-  --textColorHeader: beige;
-  --backgroundColorHeader: purple;
+  --textColorHeader: #fefae0; /* Light cream for header text */
+  --backgroundColorHeader: #283618; /* Deep green for header background */
+
+  --accentColorPrimary: #dda15e; /* Sandy orange for borders, hover effects */
+  --accentColorSecondary: #bc6c25; /* Burnt orange for buttons, highlights */
 }

@@ -17,6 +17,11 @@
   cursor: pointer;
   padding: 1rem;
   border-radius: 0.5rem;
+  background-color: var(--accentColorSecondary);
+  color: var(--textColorSecondary);
+  > :hover {
+    background-color: var(--accentColorPrimary);
+  }
 }
 
 .hidden {
@@ -24,6 +29,9 @@
 }
 
 body {
+  background-color: var(--backgroundColorPrimary);
+  color: var(--textColorPrimary);
+
   header {
     padding: 0 1rem;
     line-height: 3rem;
@@ -33,6 +41,8 @@ body {
     select {
       border-radius: 0.5rem;
       margin: 0 1rem;
+      background-color: var(--backgroundColorPrimary);
+      color: var(--textColorPrimary);
     }
   }
 
@@ -68,9 +78,9 @@ body {
     padding: 0.5rem 0;
     text-align: center;
     background-color: var(--backgroundColorHeader);
-    color: var(--textColorHeader);
+    color: var(--textColorSecondary);
     a {
-      color: var(--textColorSecondary);
+      color: var(--accentColorPrimary);
       text-decoration: none;
     }
   }
