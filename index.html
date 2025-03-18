@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap"
+    />
     <script src="./js/script.js" defer></script>
     <title>Tristan Wede Lind</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Tristan Wede Lind</h1>
       <h2>Web Developer and Author</h2>
       <select name="languages" id="language-select">
@@ -17,15 +21,15 @@
     </header>
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">On tour</a></li>
-        <li><a href="">Books</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#tour">On tour</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main>
       <section id="new-release">
-        <div>
+        <div id="new-release-header">
           <h2>NEW RELEASE</h2>
         </div>
         <h2>Advanced PHP: From Zero to Hero</h2>
@@ -86,7 +90,7 @@
         </article>
       </section>
       <section id="tour">
-        <h1>On tour</h1>
+        <h1 class="section-header">On tour</h1>
         <img
           src="assets/twl_assets/img/tristan_640.jpg"
           alt="Tristan Wede Lind"
@@ -244,12 +248,14 @@
         </article>
       </section>
       <section id="books">
-        <h1>Books</h1>
+        <h1 class="section-header">Books</h1>
         <article>
-          <img
-            src="assets/twl_assets/img/book_php.png"
-            alt="Advanced PHP book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_php.png"
+              alt="Advanced PHP book cover"
+            />
+          </div>
           <h2>Advanced PHP</h2>
           <h3>From Zero to Hero 2023</h3>
           <p>
@@ -263,10 +269,12 @@
           </p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/book_css.png"
-            alt="CSS for Developers book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_css.png"
+              alt="CSS for Developers book cover"
+            />
+          </div>
           <h2>CSS for Developers</h2>
           <h3>A Visual Journey 2022</h3>
           <p>
@@ -279,10 +287,12 @@
           </p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/book_js.png"
-            alt="Advanced JavaScript book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_js.png"
+              alt="Advanced JavaScript book cover"
+            />
+          </div>
           <h2>Advanced JavaScript</h2>
           <h3>Frameworkless 2021</h3>
           <p>
@@ -296,10 +306,12 @@
           </p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/book_programming.png"
-            alt="Basic Programming book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_programming.png"
+              alt="Basic Programming book cover"
+            />
+          </div>
           <h2>Basic Programming</h2>
           <h3>Algorithms and Beyond 2017</h3>
           <p>
@@ -312,10 +324,12 @@
           </p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/book_js_basic.png"
-            alt="Basic JavaScript book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_js_basic.png"
+              alt="Basic JavaScript book cover"
+            />
+          </div>
           <h2>Basic JavaScript</h2>
           <h3>Tweaking the Web 2017</h3>
           <p>
@@ -328,10 +342,12 @@
           </p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/book_front_end.png"
-            alt="Front-End Web Development book cover"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/book_front_end.png"
+              alt="Front-End Web Development book cover"
+            />
+          </div>
           <h2>Front-End Web Development</h2>
           <h3>A Nice Introduction 2016</h3>
           <p>
@@ -344,13 +360,15 @@
           </p>
         </article>
       </section>
-      <section>
-        <h1>Contact</h1>
+      <section id="contact">
+        <h1 class="section-header">Contact</h1>
         <article>
-          <img
-            src="assets/twl_assets/img/victoria.png"
-            alt="Image of Victoria Marsh"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/victoria.png"
+              alt="Image of Victoria Marsh"
+            />
+          </div>
           <h2>Publishing</h2>
           <p>Victoria Marsh (Editor)</p>
           <p>
@@ -361,14 +379,16 @@
           <p>Phone: <a href="tel:+4407975020028">(+44) 079 7502 0028</a></p>
         </article>
         <article>
-          <img
-            src="assets/twl_assets/img/elly.png"
-            alt="Image of Elly Houthuijzen"
-          />
+          <div class="center-img">
+            <img
+              src="assets/twl_assets/img/elly.png"
+              alt="Image of Elly Houthuijzen"
+            />
+          </div>
           <h2>Booking</h2>
           <p>Elly Houthuijzen (Agent)</p>
           <p><a href="mailto:elly@houthuijzen.com">elly@houthuijzen.com</a></p>
-          <p><a href="tel:+310642821232">(+31) 06-42821232</a></p>
+          <p>Phone: <a href="tel:+310642821232">(+31) 06-42821232</a></p>
           <form action="submit">
             <fieldset>
               <legend>Request booking</legend>
