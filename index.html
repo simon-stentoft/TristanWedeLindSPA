@@ -96,6 +96,26 @@
             ever-evolving digital landscape.
           </p>
         </article>
+        <div class="bio-book-pics">
+          <div>
+            <img
+              src="assets/twl_assets/img/book_css.png"
+              alt="Book CSS for Developers"
+            />
+            <p>CSS for Developers</p>
+            <p>A Visual Journey</p>
+            <p>2022</p>
+          </div>
+          <div>
+            <img
+              src="assets/twl_assets/img/book_js.png"
+              alt="Book Advanced JavaScript frameworkless"
+            />
+            <p>Advanced JavaScript</p>
+            <p>Frameworkless</p>
+            <p>2021</p>
+          </div>
+        </div>
       </section>
       <section id="tour">
         <h1 class="section-header">On tour</h1>
@@ -267,7 +287,7 @@
           </div>
           <div>
             <h2>Advanced PHP</h2>
-            <h3>From Zero to Hero 2023</h3>
+            <h3>From Zero to Hero <span>(2023)</span></h3>
             <p>
               "Advanced PHP: From Zero to Hero" is a groundbreaking book that
               unlocks the full potential of PHP programming. With meticulous
@@ -288,7 +308,7 @@
           </div>
           <div>
             <h2>CSS for Developers</h2>
-            <h3>A Visual Journey 2022</h3>
+            <h3>A Visual Journey <span>(2022)</span></h3>
             <p>
               This work offers an immersive exploration of CSS that transcends
               mere syntax. Through vivid illustrations and practical examples,
@@ -309,7 +329,7 @@
           </div>
           <div>
             <h2>Advanced JavaScript</h2>
-            <h3>Frameworkless 2021</h3>
+            <h3>Frameworkless <span>(2021)</span></h3>
             <p>
               In "Advanced JavaScript: Frameworkless," Tristan Wede Lind
               revolutionizes the approach to JavaScript development. Breaking
@@ -331,7 +351,7 @@
           </div>
           <div>
             <h2>Basic Programming</h2>
-            <h3>Algorithms and Beyond 2017</h3>
+            <h3>Algorithms and Beyond <span>(2017)</span></h3>
             <p>
               A definitive guide that demystifies the fundamentals of
               programming. With clarity and precision, Lind introduces readers
@@ -352,7 +372,7 @@
           </div>
           <div>
             <h2>Basic JavaScript</h2>
-            <h3>Tweaking the Web 2017</h3>
+            <h3>Tweaking the Web <span>(2017)</span></h3>
             <p>
               "Basic JavaScript" is a transformative book that demystifies the
               building blocks of JavaScript. With practical examples and
@@ -372,7 +392,7 @@
           </div>
           <div>
             <h2>Front-End Web Development</h2>
-            <h3>A Nice Introduction 2016</h3>
+            <h3>A Nice Introduction <span>(2016)</span></h3>
             <p>
               Tristan Wede Lind crafts a captivating journey into the world of
               front-end development. Lind artfully introduces readers to HTML,
@@ -386,66 +406,78 @@
       </section>
       <section id="contact">
         <h1 class="section-header">Contact</h1>
-        <article>
-          <div class="center-img">
+        <div id="contact-container">
+          <div id="article-form-container">
+            <article>
+              <div class="center-img">
+                <img
+                  src="assets/twl_assets/img/victoria.png"
+                  alt="Image of Victoria Marsh"
+                />
+              </div>
+              <div class="contact-info">
+                <h2>Publishing</h2>
+                <p>Victoria Marsh (Editor)</p>
+                <p>
+                  <a href="mailto:victoriamarsh@keapublishing.com"
+                    >victoriamarsh@keapublishing.com</a
+                  >
+                </p>
+                <p>
+                  Phone: <a href="tel:+4407975020028">(+44) 079 7502 0028</a>
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="center-img">
+                <img
+                  src="assets/twl_assets/img/elly.png"
+                  alt="Image of Elly Houthuijzen"
+                />
+              </div>
+              <div class="contact-info">
+                <h2>Booking</h2>
+                <p>Elly Houthuijzen (Agent)</p>
+                <p>
+                  <a href="mailto:elly@houthuijzen.com">elly@houthuijzen.com</a>
+                </p>
+                <p>Phone: <a href="tel:+310642821232">(+31) 06-42821232</a></p>
+              </div>
+            </article>
+            <form action="submit">
+              <fieldset>
+                <legend>Request booking</legend>
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    pattern="([A-Za-z-]+ )+[A-Za-z-]+"
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail address</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div>
+                  <label for="enquiry">Enquiry</label>
+                  <textarea id="enquiry" name="enquiry" required></textarea>
+                </div>
+                <div>
+                  <button type="submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div id="img-tristan-contact">
             <img
-              src="assets/twl_assets/img/victoria.png"
-              alt="Image of Victoria Marsh"
+              src="assets/twl_assets/img/conference.jpg"
+              alt="Tristan talking at a conference"
             />
           </div>
-          <div class="contact-info">
-            <h2>Publishing</h2>
-            <p>Victoria Marsh (Editor)</p>
-            <p>
-              <a href="mailto:victoriamarsh@keapublishing.com"
-                >victoriamarsh@keapublishing.com</a
-              >
-            </p>
-            <p>Phone: <a href="tel:+4407975020028">(+44) 079 7502 0028</a></p>
-          </div>
-        </article>
-        <article>
-          <div class="center-img">
-            <img
-              src="assets/twl_assets/img/elly.png"
-              alt="Image of Elly Houthuijzen"
-            />
-          </div>
-          <div class="contact-info">
-            <h2>Booking</h2>
-            <p>Elly Houthuijzen (Agent)</p>
-            <p>
-              <a href="mailto:elly@houthuijzen.com">elly@houthuijzen.com</a>
-            </p>
-            <p>Phone: <a href="tel:+310642821232">(+31) 06-42821232</a></p>
-          </div>
-        </article>
-        <form action="submit">
-          <fieldset>
-            <legend>Request booking</legend>
-            <div>
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                pattern="([A-Za-z-]+ )+[A-Za-z-]+"
-              />
-            </div>
-            <div>
-              <label for="email">E-mail address</label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div>
-              <label for="enquiry">Enquiry</label>
-              <textarea id="enquiry" name="enquiry" required></textarea>
-            </div>
-            <div>
-              <button type="submit">Submit</button>
-            </div>
-          </fieldset>
-        </form>
+        </div>
       </section>
       <button
         type="button"

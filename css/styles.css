@@ -38,6 +38,7 @@ body {
   main {
     padding: 0 1rem;
   }
+
   /* Header */
   header {
     padding: 1rem 1rem 0 0;
@@ -56,8 +57,7 @@ body {
     }
   }
 
-  /* Tablet */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     header {
       display: grid;
       grid-template-areas: "left middle middle right";
@@ -116,7 +116,7 @@ body {
     }
 
     /* Tablet */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 700px) {
       nav {
         text-align: center;
         padding: 1rem 2rem;
@@ -175,7 +175,7 @@ body {
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     footer {
       display: grid;
       grid-template-areas: "left middle middle right";
@@ -227,7 +227,7 @@ body {
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     #new-release {
       display: grid;
       grid-template-areas: "left left right";
@@ -256,11 +256,9 @@ body {
 /* Bio */
 #bio {
   margin: 1rem 0 1rem 0;
-  p {
-    margin-top: 1rem;
-  }
+
   blockquote {
-    margin-top: 1rem;
+    margin: 1rem 0 1rem 0;
     padding: 0.5rem;
     font-style: italic;
     padding-left: 1rem;
@@ -279,28 +277,71 @@ body {
   }
 }
 
-/* Contact */
-#contact {
-  > article {
-    margin: 1rem 0;
-    > .center-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      > img {
-        border-radius: 50%;
-        height: 10rem;
-        width: 10rem;
+@media only screen and (min-width: 800px) {
+  section#bio {
+    display: grid;
+    grid-template-areas:
+      "left right-top"
+      "left right-bottom";
+    grid-template-columns: 4.5fr 1fr;
+    gap: 1.5rem;
+
+    article {
+      grid-area: left;
+    }
+
+    div.bio-book-pics {
+      text-align: center;
+      p {
+        margin-top: 0;
+        font-weight: bold;
+      }
+      p:not(:first-of-type) {
+        font-size: 0.8rem;
+      }
+
+      div:nth-child(1) {
+        grid-area: right-top;
+        margin-bottom: 1rem;
+      }
+      div::nth-child(2) {
+        grid-area: right-bottom;
       }
     }
-    a {
-      text-decoration: none;
+  }
+}
+
+/* Contact */
+#contact {
+  div#img-tristan-contact {
+    img {
+      display: none;
     }
   }
-  > article:first-of-type {
-    border-bottom: thin solid var(--accentColorPrimary);
-    > p:last-of-type {
-      margin-bottom: 1rem;
+  #article-form-container {
+    > article {
+      margin: 1rem 0;
+      > .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > img {
+          border-radius: 50%;
+          height: auto;
+          width: 100%;
+          max-height: 10rem;
+          max-width: 10rem;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    > article:first-of-type {
+      border-bottom: thin solid var(--accentColorPrimary);
+      > p:last-of-type {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -349,7 +390,7 @@ body {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   section#contact {
     article {
       display: grid;
@@ -367,6 +408,32 @@ body {
         > h2 {
           margin-bottom: 1rem;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #contact-container {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 3fr 2fr;
+    gap: 0.5rem;
+
+    #article-form-container {
+      grid-area: left;
+    }
+    #article-form-container > article {
+      margin: 1rem 0;
+      .contact-info {
+        margin-left: 1rem;
+      }
+    }
+    div#img-tristan-contact {
+      img {
+        display: block;
+        grid-area: right;
+        padding-top: 1rem;
       }
     }
   }
@@ -392,9 +459,12 @@ section#books {
   p {
     margin: 1rem 0 1rem 0;
   }
+  span {
+    font-weight: normal;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   section#books {
     article {
       display: grid;
@@ -436,7 +506,7 @@ section#tour {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   section#tour {
     img#tristan {
       width: 100%;
